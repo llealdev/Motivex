@@ -38,7 +38,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <exec.mainClass>com.company.motivex.Motivex</exec.mainClass>
+        <exec.mainClass>motivex.view.telaInicialMotivex</exec.mainClass>
     </properties>
     <!-- https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
     
