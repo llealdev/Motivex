@@ -8,12 +8,12 @@ package motivex.view;
  *
  * @author matheus-leal
  */
-public class telaCadastroDeCarro extends javax.swing.JFrame {
+public class telaDeCadastroDeCliente extends javax.swing.JFrame {
 
     /**
-     * Creates new form telaCadastroDeCarro
+     * Creates new form telaDeCadastroDeCliente
      */
-    public telaCadastroDeCarro() {
+    public telaDeCadastroDeCliente() {
         initComponents();
     }
 
@@ -27,20 +27,20 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        bntVender = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         bntVoltar = new javax.swing.JButton();
-        bntCadastrarCarro = new javax.swing.JButton();
+        bntCadastrarCliente = new javax.swing.JButton();
         txtNome = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        txtMarca = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txtPlaca = new javax.swing.JTextField();
+        txtCPF = new javax.swing.JTextField();
+        txtTelefone = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        txtAno = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        txtValor = new javax.swing.JTextField();
+        bntBuscar = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,18 +54,23 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
 
         jPanel2.setBackground(java.awt.Color.white);
 
+        bntVender.setBackground(new java.awt.Color(0, 0, 0));
+        bntVender.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
+        bntVender.setForeground(java.awt.Color.white);
+        bntVender.setText("Vender");
+
         jScrollPane1.setBackground(java.awt.Color.white);
         jScrollPane1.setForeground(new java.awt.Color(0, 0, 0));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Carro", "Marca", "Placa", "Ano", "Valor"
+                "Nome", "CPF", "Telefone", "Email"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -75,10 +80,10 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
 
-        bntCadastrarCarro.setBackground(new java.awt.Color(0, 0, 0));
-        bntCadastrarCarro.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        bntCadastrarCarro.setForeground(java.awt.Color.white);
-        bntCadastrarCarro.setText("Cadastrar Carro");
+        bntCadastrarCliente.setBackground(new java.awt.Color(0, 0, 0));
+        bntCadastrarCliente.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
+        bntCadastrarCliente.setForeground(java.awt.Color.white);
+        bntCadastrarCliente.setText("Cadastrar Cliente");
 
         txtNome.setBackground(new java.awt.Color(255, 255, 255));
         txtNome.setForeground(new java.awt.Color(0, 0, 0));
@@ -86,75 +91,79 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Nome do Carro:");
+        jLabel1.setText("Nome do Cliente:");
 
-        txtMarca.setBackground(new java.awt.Color(255, 255, 255));
-        txtMarca.setForeground(new java.awt.Color(0, 0, 0));
+        txtCPF.setBackground(new java.awt.Color(255, 255, 255));
+        txtCPF.setForeground(new java.awt.Color(0, 0, 0));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Marca:");
-
-        txtPlaca.setBackground(new java.awt.Color(255, 255, 255));
-        txtPlaca.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefone.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefone.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Placa:");
+        jLabel4.setText("CPF:");
 
-        txtAno.setBackground(new java.awt.Color(255, 255, 255));
-        txtAno.setForeground(new java.awt.Color(0, 0, 0));
+        txtEmail.setBackground(new java.awt.Color(255, 255, 255));
+        txtEmail.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("Ano:");
+        jLabel5.setText("Telefone:");
 
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("Valor:");
+        bntBuscar.setBackground(new java.awt.Color(0, 0, 0));
+        bntBuscar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
+        bntBuscar.setForeground(java.awt.Color.white);
+        bntBuscar.setText("Buscar");
+        bntBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntBuscarActionPerformed(evt);
+            }
+        });
 
-        txtValor.setBackground(new java.awt.Color(255, 255, 255));
-        txtValor.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("Email:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 877, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(bntVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(bntCadastrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(80, 80, 80)
+                                    .addComponent(bntVender, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 877, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(txtValor, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel4))
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
-                                    .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(bntVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bntCadastrarCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(94, 94, 94))))
+                        .addGap(325, 325, 325)
+                        .addComponent(bntBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,25 +171,24 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel3)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel5))
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(bntBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bntCadastrarCarro)
-                    .addComponent(bntVoltar))
+                    .addComponent(bntCadastrarCliente)
+                    .addComponent(bntVoltar)
+                    .addComponent(bntVender))
                 .addGap(18, 18, 18))
         );
 
@@ -217,6 +225,10 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void bntBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntBuscarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -234,41 +246,41 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(telaCadastroDeCarro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(telaDeCadastroDeCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(telaCadastroDeCarro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(telaDeCadastroDeCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(telaCadastroDeCarro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(telaDeCadastroDeCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(telaCadastroDeCarro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(telaDeCadastroDeCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new telaCadastroDeCarro().setVisible(true);
+                new telaDeCadastroDeCliente().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntCadastrarCarro;
+    private javax.swing.JButton bntBuscar;
+    private javax.swing.JButton bntCadastrarCliente;
+    private javax.swing.JButton bntVender;
     private javax.swing.JButton bntVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField txtAno;
-    private javax.swing.JTextField txtMarca;
+    private javax.swing.JTextField txtCPF;
+    private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtPlaca;
-    private javax.swing.JTextField txtValor;
+    private javax.swing.JTextField txtTelefone;
     // End of variables declaration//GEN-END:variables
 }

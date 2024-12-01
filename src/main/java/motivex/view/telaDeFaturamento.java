@@ -31,16 +31,16 @@ public class telaDeFaturamento extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         bntVoltar = new javax.swing.JButton();
-        txtNome = new javax.swing.JTextField();
+        txtCarro = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        txtRG = new javax.swing.JTextField();
+        txtMarca = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtCPF = new javax.swing.JTextField();
+        txtValor = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        txtCPF1 = new javax.swing.JTextField();
+        txtVendedor = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txtCPF2 = new javax.swing.JTextField();
+        txtData = new javax.swing.JTextField();
         bntBuscar = new javax.swing.JButton();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -78,32 +78,32 @@ public class telaDeFaturamento extends javax.swing.JFrame {
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
 
-        txtNome.setBackground(new java.awt.Color(255, 255, 255));
-        txtNome.setForeground(new java.awt.Color(0, 0, 0));
+        txtCarro.setBackground(new java.awt.Color(255, 255, 255));
+        txtCarro.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Carro:");
 
-        txtRG.setBackground(new java.awt.Color(255, 255, 255));
-        txtRG.setForeground(new java.awt.Color(0, 0, 0));
+        txtMarca.setBackground(new java.awt.Color(255, 255, 255));
+        txtMarca.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Marca:");
 
-        txtCPF.setBackground(new java.awt.Color(255, 255, 255));
-        txtCPF.setForeground(new java.awt.Color(0, 0, 0));
+        txtValor.setBackground(new java.awt.Color(255, 255, 255));
+        txtValor.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Valor:");
 
-        txtCPF1.setBackground(new java.awt.Color(255, 255, 255));
-        txtCPF1.setForeground(new java.awt.Color(0, 0, 0));
+        txtVendedor.setBackground(new java.awt.Color(255, 255, 255));
+        txtVendedor.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Noto Sans", 3, 18)); // NOI18N
@@ -115,8 +115,8 @@ public class telaDeFaturamento extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Data:");
 
-        txtCPF2.setBackground(new java.awt.Color(255, 255, 255));
-        txtCPF2.setForeground(new java.awt.Color(0, 0, 0));
+        txtData.setBackground(new java.awt.Color(255, 255, 255));
+        txtData.setForeground(new java.awt.Color(0, 0, 0));
 
         bntBuscar.setBackground(new java.awt.Color(0, 0, 0));
         bntBuscar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
@@ -136,21 +136,21 @@ public class telaDeFaturamento extends javax.swing.JFrame {
                         .addComponent(bntBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(txtCPF2, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                                .addComponent(txtData, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel3))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel4))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel5)
-                                .addComponent(txtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(txtVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -168,16 +168,16 @@ public class telaDeFaturamento extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCarro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bntBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(txtCPF2))
+                    .addComponent(txtData))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
@@ -267,10 +267,10 @@ public class telaDeFaturamento extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField txtCPF;
-    private javax.swing.JTextField txtCPF1;
-    private javax.swing.JTextField txtCPF2;
-    private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtRG;
+    private javax.swing.JTextField txtCarro;
+    private javax.swing.JTextField txtData;
+    private javax.swing.JTextField txtMarca;
+    private javax.swing.JTextField txtValor;
+    private javax.swing.JTextField txtVendedor;
     // End of variables declaration//GEN-END:variables
 }

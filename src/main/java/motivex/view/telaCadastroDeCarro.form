@@ -99,24 +99,24 @@
                                   <Component id="jScrollPane1" alignment="0" min="-2" pref="877" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="txtCPF2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtValor" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtNome" alignment="0" pref="236" max="32767" attributes="0"/>
                                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txtRG" min="-2" pref="222" max="-2" attributes="0"/>
+                                          <Component id="txtMarca" min="-2" pref="222" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="txtCPF" min="-2" pref="212" max="-2" attributes="0"/>
+                                          <Component id="txtPlaca" min="-2" pref="212" max="-2" attributes="0"/>
                                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txtCPF1" min="-2" pref="153" max="-2" attributes="0"/>
+                                          <Component id="txtAno" min="-2" pref="153" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -146,14 +146,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txtNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtRG" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtCPF" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtCPF1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMarca" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPlaca" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAno" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtCPF2" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtValor" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="89" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
@@ -249,7 +249,7 @@
                 <Property name="text" type="java.lang.String" value="Nome do Carro:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtRG">
+            <Component class="javax.swing.JTextField" name="txtMarca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -276,7 +276,7 @@
                 <Property name="text" type="java.lang.String" value="Marca:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCPF">
+            <Component class="javax.swing.JTextField" name="txtPlaca">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -303,7 +303,7 @@
                 <Property name="text" type="java.lang.String" value="Placa:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCPF1">
+            <Component class="javax.swing.JTextField" name="txtAno">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -344,7 +344,7 @@
                 <Property name="text" type="java.lang.String" value="Valor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCPF2">
+            <Component class="javax.swing.JTextField" name="txtValor">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
