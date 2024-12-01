@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.company.motivex;
+
+import io.github.cdimascio.dotenv.Dotenv;
 
 /**
  *
@@ -11,6 +9,6 @@ package com.company.motivex;
 public class Motivex {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
     }
 }
