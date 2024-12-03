@@ -139,6 +139,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Faturamento"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntFaturamentoActionPerformed"/>
+              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
               <Properties>
@@ -180,6 +183,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Carros"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntCarros1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="bntVender1">
               <Properties>
@@ -194,6 +200,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Vender"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntVender1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="bntFuncionarios1">
               <Properties>
@@ -208,6 +217,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Funcionarios"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntFuncionarios1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

@@ -84,6 +84,11 @@ public class telaDeCadastroDeFuncionario extends javax.swing.JFrame {
         bntVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
+        bntVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVoltarActionPerformed(evt);
+            }
+        });
 
         bntCadastrarFuncionario.setBackground(new java.awt.Color(0, 0, 0));
         bntCadastrarFuncionario.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
@@ -173,7 +178,7 @@ public class telaDeCadastroDeFuncionario extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(76, 76, 76)
                                 .addComponent(bntBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,6 +243,13 @@ public class telaDeCadastroDeFuncionario extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaPrincipalMotivex tlPrincipal = new telaPrincipalMotivex();
+        tlPrincipal.setVisible(true);
+    }//GEN-LAST:event_bntVoltarActionPerformed
 
     /**
      * @param args the command line arguments

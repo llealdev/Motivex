@@ -50,6 +50,11 @@ public class telaPrincipalMotivex extends javax.swing.JFrame {
         bntFaturamento.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntFaturamento.setForeground(java.awt.Color.white);
         bntFaturamento.setText("Faturamento");
+        bntFaturamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntFaturamentoActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setBackground(java.awt.Color.white);
         jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,16 +76,31 @@ public class telaPrincipalMotivex extends javax.swing.JFrame {
         bntCarros1.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntCarros1.setForeground(java.awt.Color.white);
         bntCarros1.setText("Carros");
+        bntCarros1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntCarros1ActionPerformed(evt);
+            }
+        });
 
         bntVender1.setBackground(new java.awt.Color(0, 0, 0));
         bntVender1.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVender1.setForeground(java.awt.Color.white);
         bntVender1.setText("Vender");
+        bntVender1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVender1ActionPerformed(evt);
+            }
+        });
 
         bntFuncionarios1.setBackground(new java.awt.Color(0, 0, 0));
         bntFuncionarios1.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntFuncionarios1.setForeground(java.awt.Color.white);
         bntFuncionarios1.setText("Funcionarios");
+        bntFuncionarios1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntFuncionarios1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -146,6 +166,34 @@ public class telaPrincipalMotivex extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntCarros1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCarros1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaVizualizacaoCarros carros = new telaVizualizacaoCarros();
+        carros.setVisible(true);
+    }//GEN-LAST:event_bntCarros1ActionPerformed
+
+    private void bntVender1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVender1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaVizualizacaoCarros carros = new telaVizualizacaoCarros();
+        carros.setVisible(true);
+    }//GEN-LAST:event_bntVender1ActionPerformed
+
+    private void bntFuncionarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFuncionarios1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaDeCadastroDeFuncionario funcionario = new telaDeCadastroDeFuncionario();
+        funcionario.setVisible(true);
+    }//GEN-LAST:event_bntFuncionarios1ActionPerformed
+
+    private void bntFaturamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFaturamentoActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaDeFaturamento faturamento = new telaDeFaturamento();
+        faturamento.setVisible(true);
+    }//GEN-LAST:event_bntFaturamentoActionPerformed
 
     /**
      * @param args the command line arguments

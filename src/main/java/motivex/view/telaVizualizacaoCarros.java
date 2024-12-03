@@ -49,6 +49,11 @@ public class telaVizualizacaoCarros extends javax.swing.JFrame {
         btnVender.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         btnVender.setForeground(java.awt.Color.white);
         btnVender.setText("Vender");
+        btnVender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVenderActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setBackground(java.awt.Color.white);
         jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
@@ -70,11 +75,21 @@ public class telaVizualizacaoCarros extends javax.swing.JFrame {
         btnVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         btnVoltar.setForeground(java.awt.Color.white);
         btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
 
         btnCadastrarCarro.setBackground(new java.awt.Color(0, 0, 0));
         btnCadastrarCarro.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         btnCadastrarCarro.setForeground(java.awt.Color.white);
         btnCadastrarCarro.setText("Cadastrar Carro");
+        btnCadastrarCarro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastrarCarroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -137,6 +152,27 @@ public class telaVizualizacaoCarros extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaPrincipalMotivex tlPrincipal = new telaPrincipalMotivex();
+        tlPrincipal.setVisible(true);
+    }//GEN-LAST:event_btnVoltarActionPerformed
+
+    private void btnCadastrarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarCarroActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaCadastroDeCarro cadastroCarro = new telaCadastroDeCarro();
+        cadastroCarro.setVisible(true);
+    }//GEN-LAST:event_btnCadastrarCarroActionPerformed
+
+    private void btnVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVenderActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaDeCadastroDeCliente cliente = new telaDeCadastroDeCliente();
+        cliente.setVisible(true);
+    }//GEN-LAST:event_btnVenderActionPerformed
 
     /**
      * @param args the command line arguments

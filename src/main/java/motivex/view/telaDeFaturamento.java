@@ -77,6 +77,11 @@ public class telaDeFaturamento extends javax.swing.JFrame {
         bntVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
+        bntVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVoltarActionPerformed(evt);
+            }
+        });
 
         txtCarro.setBackground(new java.awt.Color(255, 255, 255));
         txtCarro.setForeground(new java.awt.Color(0, 0, 0));
@@ -217,6 +222,13 @@ public class telaDeFaturamento extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaPrincipalMotivex tlPrincipal = new telaPrincipalMotivex();
+        tlPrincipal.setVisible(true);
+    }//GEN-LAST:event_bntVoltarActionPerformed
 
     /**
      * @param args the command line arguments

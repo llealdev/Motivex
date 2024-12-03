@@ -207,6 +207,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Voltar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntVoltarActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="bntCadastrarCarro">
               <Properties>
@@ -221,6 +224,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cadastrar Carro"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntCadastrarCarroActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="txtNome">
               <Properties>

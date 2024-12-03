@@ -74,11 +74,21 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
         bntVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
+        bntVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVoltarActionPerformed(evt);
+            }
+        });
 
         bntCadastrarCarro.setBackground(new java.awt.Color(0, 0, 0));
         bntCadastrarCarro.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntCadastrarCarro.setForeground(java.awt.Color.white);
         bntCadastrarCarro.setText("Cadastrar Carro");
+        bntCadastrarCarro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntCadastrarCarroActionPerformed(evt);
+            }
+        });
 
         txtNome.setBackground(new java.awt.Color(255, 255, 255));
         txtNome.setForeground(new java.awt.Color(0, 0, 0));
@@ -216,6 +226,17 @@ public class telaCadastroDeCarro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaVizualizacaoCarros vizCarro = new telaVizualizacaoCarros();
+        vizCarro.setVisible(true);
+    }//GEN-LAST:event_bntVoltarActionPerformed
+
+    private void bntCadastrarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCadastrarCarroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntCadastrarCarroActionPerformed
 
     /**
      * @param args the command line arguments

@@ -58,6 +58,11 @@ public class telaDeCadastroDeCliente extends javax.swing.JFrame {
         bntVender.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVender.setForeground(java.awt.Color.white);
         bntVender.setText("Vender");
+        bntVender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVenderActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setBackground(java.awt.Color.white);
         jScrollPane1.setForeground(new java.awt.Color(0, 0, 0));
@@ -79,11 +84,21 @@ public class telaDeCadastroDeCliente extends javax.swing.JFrame {
         bntVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
+        bntVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVoltarActionPerformed(evt);
+            }
+        });
 
         bntCadastrarCliente.setBackground(new java.awt.Color(0, 0, 0));
         bntCadastrarCliente.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntCadastrarCliente.setForeground(java.awt.Color.white);
         bntCadastrarCliente.setText("Cadastrar Cliente");
+        bntCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntCadastrarClienteActionPerformed(evt);
+            }
+        });
 
         txtNome.setBackground(new java.awt.Color(255, 255, 255));
         txtNome.setForeground(new java.awt.Color(0, 0, 0));
@@ -228,6 +243,24 @@ public class telaDeCadastroDeCliente extends javax.swing.JFrame {
     private void bntBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBuscarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bntBuscarActionPerformed
+
+    private void bntVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaVizualizacaoCarros vizCarro = new telaVizualizacaoCarros();
+        vizCarro.setVisible(true);
+    }//GEN-LAST:event_bntVoltarActionPerformed
+
+    private void bntCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCadastrarClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntCadastrarClienteActionPerformed
+
+    private void bntVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVenderActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaDeConfirmacaoDeVenda confiVenda = new telaDeConfirmacaoDeVenda();
+        confiVenda.setVisible(true);
+    }//GEN-LAST:event_bntVenderActionPerformed
 
     /**
      * @param args the command line arguments

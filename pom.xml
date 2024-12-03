@@ -5,6 +5,7 @@
     <artifactId>Motivex</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    
     <repositories>
         <repository>
             <id>central</id>

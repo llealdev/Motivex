@@ -74,6 +74,11 @@ public class telaDeConfirmacaoDeVenda extends javax.swing.JFrame {
         bntVoltar.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
         bntVoltar.setForeground(java.awt.Color.white);
         bntVoltar.setText("Voltar");
+        bntVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVoltarActionPerformed(evt);
+            }
+        });
 
         bntConfirmarVenda.setBackground(new java.awt.Color(0, 0, 0));
         bntConfirmarVenda.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
@@ -216,6 +221,13 @@ public class telaDeConfirmacaoDeVenda extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVoltarActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        telaDeCadastroDeCliente cliente = new telaDeCadastroDeCliente();
+        cliente.setVisible(true);
+    }//GEN-LAST:event_bntVoltarActionPerformed
 
     /**
      * @param args the command line arguments
